@@ -9,6 +9,7 @@ const todolist = document.querySelector('.todo-list');
 todoButton.addEventListener('click', addTodo);
 // add the addEventListener for todoList which has a callback function (deleteCheck)
 todolist.addEventListener('click', deleteCheck);
+
 //Functions
 function addTodo(event){
     // console.log(event.target);
@@ -17,6 +18,7 @@ function addTodo(event){
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
     // create a const that is equal to the li element 
+    const newtodo = document.li("div");
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
